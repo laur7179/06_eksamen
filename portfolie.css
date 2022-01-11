@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* NAV-BAR */
+
+.navbar li {
+  font-family: "VT323", monospace;
+  font-size: 25px;
+}
+
+.container .navbar {
+  height: 15%; /* højden på navigationsbaren  */
+  display: flex; /* alle elementer står ved siden af hinanden  */
+  align-items: center; /* elementerne står i midten af højden i nav-baren  */
+}
+
+.nav {
+  flex: 1; /* antal rækker til nav-elementer  */
+  text-align: left; /* tekst til højre  */
+  margin-right: 5%; /* luft til højre fra tekst  */
+  margin-top: 1.5rem;
+}
+
+nav ul li {
+  display: inline-block; /* prikker forsvinder fra tekst  */
+  padding: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none; /* linje forsvinder  */
+  color: rgb(0, 17, 255);
+}
+
+ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* baggrund */
+
+body {
+  background-image: url(billeder/udentv.png);
+  margin-left: 5rem;
+  padding: 2pt;
+  background-size: cover;
+}
+
+/* .container {
+  height: 100vh;
+  background-image: url(billeder/udentv.png);
+  background-size: cover;
+  background-repeat: repeat-y;
+  padding-left: 5%;
+} */
+
+/* Styling af skrift */
+h3 span {
+  color: white;
+  background-color: #000000;
+  font-family: "VT323", monospace;
+  font-size: 80px;
+}
+
+/* overskrift står hvor den skal */
+.overskrift h3 {
+  margin-left: 35%;
+}
+
+/* grid til billederne */
+.kolonne img {
+  max-width: 70%;
+}
+
+.kolonne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+/* gør billederne runde i kanterne */
+.kolonne img {
+  border-radius: 7%;
+  /* box-shadow: 6px 6px 12px #000000, -6px -6px 12px rgb(0, 0, 0); */
+  box-shadow: 0px 0px 0px 6px #878787;
+}
+
+/* gør at billeder bliver større når man holder musen over */
+/* cursor gør at man kan se at man kan klikke på billedet */
+.kolonne .div1:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* GLITCH PÅ OVERSKRIFT */
+
+.overskrift {
+  animation: glitch1 2.5s infinite;
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.text1 {
+  font-family: "VT323", monospace;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/* kun 1 kolonne 1200px */
+@media (max-width: 1200px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-left: 13rem;
+  }
+
+  .overskrift h3 {
+    margin-left: 34%;
+    place-content: end-center;
+  }
+
+  h3 span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    padding: auto;
+    padding-right: 10rem;
+  }
+
+  .overskrift h3 {
+    margin-left: 24%;
+    place-content: end-center;
+    padding-top: 2rem;
+  }
+
+  .kolonne img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    padding: auto;
+    padding-right: 8rem;
+  }
+
+  .overskrift h3 {
+    margin-left: 20%;
+    place-content: end-center;
+    padding-top: 2rem;
+  }
+
+  .kolonne img {
+    max-width: 100%;
+  }
+
+  h3 span {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kolonne {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    margin-left: 0rem;
+    padding: auto;
+    padding-right: 5rem;
+  }
+
+  .overskrift h3 {
+    margin-left: 1%;
+    place-content: end-center;
+    padding-top: 2rem;
+  }
+
+  .kolonne img {
+    max-width: 100%;
+  }
+
+  h3 span {
+    font-size: 55px;
+  }
+}
