@@ -162,3 +162,85 @@ ul li a:hover {
 .container {
   animation: glitch1 2.5s infinite;
 }
+
+@media (max-width: 1000px) {
+  .row {
+    color: #e6e7ed;
+    margin: 5rem auto; /* placering af tekst */
+    margin-left: -1%; /* luft i venstre side  */
+  }
+
+  .col h1 {
+    color: #535353;
+    font-size: 50px;
+    font-family: "Special Elite", cursive;
+    margin-left: 5%; /* luft i venstre side  */
+    margin-top: -3%;
+  }
+
+  .col h2 {
+    color: #535353;
+    font-size: 100px;
+    font-family: "Special Elite", cursive;
+    margin-left: 8%; /* luft i venstre side  */
+  }
+  .container {
+    background-image: url(billeder/udentv.png);
+  }
+}
+
+@media (max-width: 1000px) {
+  .row {
+    color: #e6e7ed;
+    margin: 5rem auto; /* placering af tekst */
+    margin-left: -1%; /* luft i venstre side  */
+  }
+
+  .col h1 {
+    color: #535353;
+    font-size: 50px;
+    font-family: "Special Elite", cursive;
+    margin-left: 5%; /* luft i venstre side  */
+    margin-top: -3%;
+  }
+
+  .col h2 {
+    color: #535353;
+    font-size: 100px;
+    font-family: "Special Elite", cursive;
+    margin-left: 8%; /* luft i venstre side  */
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    color: #e6e7ed;
+    margin: 5rem auto; /* placering af tekst */
+    margin-left: -1%; /* luft i venstre side  */
+  }
+
+  .col h1 {
+    color: #535353;
+    font-size: 30px;
+    font-family: "Special Elite", cursive;
+    margin-left: 5%; /* luft i venstre side  */
+    margin-top: -3%;
+  }
+
+  .col h2 {
+    color: #535353;
+    font-size: 70px;
+    font-family: "Special Elite", cursive;
+    margin-left: 8%; /* luft i venstre side  */
+  }
+
+  .container #knap {
+    top: 10%;
+    left: 10%;
+    position: relative;
+  }
+
+  .container {
+    background-image: url(billeder/udentv.png);
+  }
+}

@@ -143,16 +143,19 @@ h3 span {
 }
 
 /* gør at knappen er med i grid/kolonnen */
-button {
+.button span {
   grid-column: 2/3;
   margin-bottom: 5vw;
-  font-family: "Roboto", sans-serif;
+  font-family: "VT323", monospace;
   width: 10rem;
   height: 3rem;
-  margin-left: 39%;
-  background-color: blue;
+  margin-left: 32%;
+  color: blue;
+  font-size: 2rem;
+  background-color: white;
+  /* background-color: blue;
   color: white;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .kolonne img {
